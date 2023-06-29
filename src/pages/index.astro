@@ -1,0 +1,41 @@
+---
+
+import Poke from '../components/Poke'
+import "../components/style.css"
+//
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		
+	</head>
+	<body>
+		<header class="Fredericka bg-zinc-800 text-center text-white text-4xl md:text-6xl mb-4 p-2">
+			<span class="font-bold">
+				Pokemon	-
+			</span>  Soquel
+		</header>
+		<main class="container mx-auto px-4 min-h-[90vh]">
+			<Poke client:visible/>
+		</main>
+	</body>
+
+	<footer class="flex flex-col md:flex-row py-6 Fredericka mt-7 text-zinc-800 bg-yellow-200 text-center items-center">
+		<div class="flex-1">
+			<h2 class="text-4xl md:text-6xl">
+				Soquel
+			</h2>
+			<a href="https://www.youtube.com/@soquel_" class="py-6 block text-2xl md:text-4xl font-bold">Youtube</a>
+		</div>
+		<div class="flex-1">
+			<h2 class="text-4xl md:text-6xl font-bold">
+				Leopoldo Miquel
+			</h2>
+		</div>
+	</footer>
+</html>
